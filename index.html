@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Random Buisness Name Generator</title>
+
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="topbar">
+            <h1>A Random Buisness Name Generator</h1>
+        </div>
+
+        <div id="left">
+            <p><b>Control Panel</b></p>
+            <button type="button" id="generateName" onclick="generate()">Generate Name</button>
+        </div>
+
+        <div id="middle">
+            <div id="generated"></div>
+        </div>
+
+        <div id="right">
+        </div>
+
+            <script>
+
+                function c(what) { return document.getElementById(what); }
+                function choose(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+                generate = function () {
+                    var str = "";
+                    str += (choose(["Amie", "Amanda", "Amy", "Bob", "Bill", "Cathie", "Caitlian", "Cindy", "Dick", "Dan", "Ellie", "Frank", "George", "Georga", "Greg", "Hillary", "Henry", "Ian", "Joe", "Jon", "John", "Jery", "Jay", "Katie", "Katy", "Kate", "Lary"])) + "\'s ";
+                    c('generated').innerHTML = str;
+                }
+
+                Main = function () {
+
+                    setTimeout(Main, 1000 / 30);
+
+                }
+
+                Main();
+        </script>
+    </body>
+</html>

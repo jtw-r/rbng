@@ -1,0 +1,177 @@
+#topbar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 48px;
+    line-height: 0px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+#left {
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    right: 66%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+#middle {
+    position: absolute;
+    top: 48px;
+    left: 34%;
+    right: 33%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+#right {
+    position: absolute;
+    top: 48px;
+    left: 67%;
+    right: 0px;
+    height: 100%;
+}
+h1{
+	font-size:38px;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+}
+h2{
+	font-size:32px;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+}
+h3{
+	font-size:27px;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+}
+h4{
+	font-size:46px;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+}
+h5{
+	font-size:46px;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+}
+h6{
+	font-size:46px;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+}
+p{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:100;
+    line-height: 0px;
+}
+button{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:300;
+}
+input{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:300;
+}
+body{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:300;
+}
+.red{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:100;
+	color: red;
+}
+.green{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:100;
+	color: green;
+}
+.blue{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:100;
+	color: blue;
+}
+.yellow{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:100;
+	color: yellow;
+}
+button{    
+    display: inline-block;
+    *display: inline; /*IE 6/7*/
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: inherit;
+    font-size: 18px;
+    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    *color: #444; /* IE 6 & 7 */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+button:hover,
+button:focus{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+button:focus{
+    outline: 0;
+}
+button:active{
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+button.green{
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(28, 184, 65);
+}
+button.red{
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(202, 60, 60);
+}
+button.orange{
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(223, 117, 20);
+}
+button.lightblue{
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(66, 184, 221);
+}
+body {
+    font-size: 16px;
+}
