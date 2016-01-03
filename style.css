@@ -3,9 +3,8 @@
     top: 0px;
     left: 0px;
     height: 48px;
-    line-height: 0px;
     width: 100%;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #cbcbcb;
 }
 #left {
     position: absolute;
@@ -13,7 +12,7 @@
     left: 0px;
     right: 66%;
     height: 100%;
-    border-right: 1px solid #000;
+    border-right: 1px solid #cbcbcb;
 }
 #middle {
     position: absolute;
@@ -21,7 +20,7 @@
     left: 34%;
     right: 33%;
     height: 100%;
-    border-right: 1px solid #000;
+    border-right: 1px solid #cbcbcb;
 }
 #right {
     position: absolute;
@@ -66,6 +65,16 @@ p{
 	font-weight:100;
     line-height: 0px;
 }
+b{
+	font-size: 18px;
+	font-family:Helvetica, Arial;
+	font-weight:bold;
+}
+b>#title {
+    font-size: 22px;
+    font-family: Helvetica, Arial;
+    font-weight: bold;
+}
 button{
 	font-size: 18px;
 	font-family:Helvetica, Arial;
@@ -84,7 +93,7 @@ body{
 .red{
 	font-size: 18px;
 	font-family:Helvetica, Arial;
-	font-weight:100;
+	font-weight:inherit;
 	color: red;
 }
 .green{
@@ -174,4 +183,13 @@ button.lightblue{
 }
 body {
     font-size: 16px;
+}
+.grid {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
 }
