@@ -1,5 +1,5 @@
 # RandomBusinessNameGenerator
-A 'simple' web based Buisness name generator. Built mostly upon javascript and css and with a few dabs of html.
+A 'simple' web based Business name generator. Built mostly upon javascript and css and with a few dabs of html.
 
 # Change log:
 * Version 1.0.0:
