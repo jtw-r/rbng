@@ -48,15 +48,17 @@
                     var str = "";
 
                     if (c('name').checked == true) {
-                        str += (choose(namesdata)) + "\'s ";
+                        str += (choose(namedata)) + "\'s ";
                     } else {
                         str += (choose(beginingdata)) + " ";
                     }
 
-                    str += (choose(thingsdata));
+                    str += (choose(thingdata));
 
                     if (c('companyend').checked == true) {
                         str += " " + (choose(endingdata));
+                    } else {
+                        str += "s"
                     }
 
                     return str;
