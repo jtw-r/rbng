@@ -11,7 +11,7 @@
     top: 48px;
     left: 0px;
     right: 66%;
-    height: 100%;
+    height: 92.5%;
     border-right: 1px solid #cbcbcb;
 }
 #middle {
@@ -19,7 +19,7 @@
     top: 48px;
     left: 34%;
     right: 33%;
-    height: 100%;
+    height: 92.5%;
     border-right: 1px solid #cbcbcb;
 }
 #right {
@@ -27,7 +27,8 @@
     top: 48px;
     left: 67%;
     right: 0px;
-    height: 100%;
+    height: 92.5%;
+    overflow-y: scroll;
 }
 h1{
 	font-size:38px;
@@ -70,7 +71,9 @@ b{
 	font-family:Helvetica, Arial;
 	font-weight:bold;
 }
-b>#title {
+#title,
+#credits,
+#version {
     font-size: 22px;
     font-family: Helvetica, Arial;
     font-weight: bold;
@@ -183,13 +186,4 @@ button.lightblue{
 }
 body {
     font-size: 16px;
-}
-.grid {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-    letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
 }
