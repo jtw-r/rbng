@@ -8,4 +8,4 @@ var namesstr = "Amie, Amanda, Amy, Bob, Bill, Cathie, Caitlian, Cindy, Dick, Dan
 var namesdata = namesstr.split(",");
 
 var endingsstr = "Business, Company, Ltd., Co., Foundation, Farm, Store";
-var endingsdata = endingsstr.split(",");
+var endingdata = endingsstr.split(",");
