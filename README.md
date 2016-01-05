@@ -13,6 +13,6 @@ A 'simple' web based Business name generator. Built mostly upon javascript and c
 - [The webpage](http://randombusinessnamegenerator.gear.host/) - Yes, it is on a free host :(
 
 # How you can help:
-* You can add things to the randomness file... [HERE](https://github.com/thejonathanr/RandomBusinessNameGenerator/blob/master/choices.js)
+* You can add things to the choices file... [HERE](https://github.com/thejonathanr/RandomBusinessNameGenerator/blob/master/choices.js)
 * You can recomend it to any friends/co-workes that you may know
 * You can report any bugs [HERE](https://github.com/thejonathanr/RandomBusinessNameGenerator/issues/new)
