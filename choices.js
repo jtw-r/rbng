@@ -1,5 +1,5 @@
 //Random Things
-var thingstr = "Apple, Bannana, Cherry, Farm, Orchard, Bear, Book, Bike, Bat, Window, Computer, Wine Press, Table, Cat, Car, Auto Part, Lamp, Tree, Mailbox, Newspaper, Office Supplie, Jewlry, Blanket, Basket, Pen, Paper, Art Supplie, Door, Doorframe, Deck, Pool, Hottub, Shoe, Pantleg, Fur, Piano, Pie, Sink, Bookcase";
+var thingstr = "Apple, Bannana, Cherry, Farm, Orchard, Bear, Book, Bike, Bat, Window, Computer, Wine Press, Table, Cat, Car, Auto Part, Lamp, Tree, Mailbox, Newspaper, Office Stuff, Jewlry, Blanket, Basket, Pen, Paper, Art Stuff, Door, Doorframe, Deck, Pool, Hottub, Shoe, Pantleg, Fur, Piano, Pie, Sink, Bookcase, Hourglass";
 var thingdata = thingstr.split(",");
 
 //Begining of the name
@@ -11,5 +11,5 @@ var namestr = "Amie, Amanda, Amy, Bob, Bill, Cathie, Caitlian, Cindy, Dick, Dan,
 var namedata = namestr.split(",");
 
 //Ending of the name
-var endingstr = "Business, Company, Ltd., Co., Foundation, Farm, Store, Inc., Corp.";
+var endingstr = "Business, Company, Ltd., Co., Foundation, Farm, Store, Inc., Corp., Outlet";
 var endingdata = endingstr.split(",");
