@@ -21,21 +21,17 @@
             <button class="green" type="button" id="generateName" onclick="c('generated').innerHTML = generate();">Generate Name</button> <button class="red" type="button" id="clear" onclick="c('history').innerHTML = ''">Clear History</button><br><br>
             <p>Please Note that these names are completely random and sometimes might not make much sense, like for example 'Don's Hourglass farm'</p>
         </div>
-
         <div id="bottomleft">
             Check out the source code on <a href="https://github.com/thejonathanr/RandomBusinessNameGenerator" target="_blank">Github</a>
         </div>
-
         <div id="middle">
             <div id="generated"></div>
         </div>
-
         <div id="right">
             <div id="history"></div>
         </div>
 
             <script>
-
                 function c(what) { return document.getElementById(what); }
                 function choose(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
@@ -51,7 +47,6 @@
                     }
 
                     var str = "";
-
                     if (c('name').checked == true) {
                         str += (choose(namedata)) + "\'s ";
                     } else {
@@ -67,7 +62,6 @@
                     }
 
                     str += " " + (choose(endingdata));
-
                     return str;
                 }
         </script>
