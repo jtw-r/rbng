@@ -54,30 +54,15 @@ h3{
 	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-weight:100;
 }
-h4{
+h4, h5, h6{
 	font-size:46px;
 	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-weight:100;
 }
-h5{
-	font-size:46px;
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight:100;
-}
-h6{
-	font-size:46px;
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight:100;
-}
-p{
+p, b{
 	font-size: 18px;
 	font-family:Helvetica, Arial;
 	font-weight:100;
-}
-b{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:bold;
 }
 #title,
 #credits,
@@ -97,7 +82,7 @@ input{
 	font-weight:300;
 }
 body{
-	font-size: 18px;
+	font-size: 16px;
 	font-family:Helvetica, Arial;
 	font-weight:300;
 }
@@ -141,14 +126,14 @@ button{
     user-select: none;
     font-family: inherit;
     font-size: 18px;
-    *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
-    *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+    *font-size: 90%;
+    *overflow: visible;
     padding: 0.5em 1em;
-    color: #444; /* rgba not supported (IE 8) */
-    color: rgba(0, 0, 0, 0.80); /* rgba supported */
-    *color: #444; /* IE 6 & 7 */
-    border: 1px solid #999;  /*IE 6/7/8*/
-    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    color: #444;
+    color: rgba(0, 0, 0, 0.80);
+    *color: #444;
+    border: 1px solid #999;
+    border: none rgba(0, 0, 0, 0);
     background-color: #E6E6E6;
     text-decoration: none;
     border-radius: 2px;
@@ -192,9 +177,10 @@ button.lightblue{
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     background: rgb(66, 184, 221);
 }
-body {
-    font-size: 16px;
-}
 a {
     color: #999;
+}
+#hi-title {
+    border-bottom: 1px dashed #cbcbcb;
+    padding: 2px;
 }
