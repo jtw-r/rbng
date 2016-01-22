@@ -10,7 +10,7 @@ A 'simple' web based Business name generator. Built mostly upon javascript and c
   * Separate file for all of the randomness that the generator chooses from
 
 # Links:
-- [The webpage](http://randombusinessnamegenerator.gear.host/) - Yes, it is on a free host :(
+- [The webpage](http://thejonathanr.github.io/rbng/)
 
 # How you can help:
 * You can add things to the choices file... [HERE](https://github.com/thejonathanr/RandomBusinessNameGenerator/blob/master/choices.js)
