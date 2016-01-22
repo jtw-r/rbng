@@ -112,7 +112,7 @@ body{
 }
 button{    
     display: inline-block;
-    *display: inline; /*IE 6/7*/
+    *display: inline;
     zoom: 1;
     line-height: normal;
     white-space: nowrap;
@@ -165,22 +165,14 @@ button.red{
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     background: rgb(202, 60, 60);
 }
-button.orange{
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: rgb(223, 117, 20);
-}
-button.lightblue{
-    color: white;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    background: rgb(66, 184, 221);
-}
 a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
     color: #999;
 }
-#hi-title {
+#history-title {
     border-bottom: 1px dashed #cbcbcb;
     padding: 2px;
 }
