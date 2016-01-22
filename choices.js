@@ -11,5 +11,5 @@ var namestr = "Amie, Amanda, Amy, Bob, Bill, Cathie, Caitlian, Cindy, Dick, Dan,
 var namedata = namestr.split(",");
 
 //Ending of the name
-var endingstr = "Business, Company, Ltd., Co., Foundation, Farm, Store, Inc., Corp., Outlet, Group";
+var endingstr = "Business, Company, Ltd., Co., Foundation, Farm, Store, Inc., Corp., Outlet, Group";];
 var endingdata = endingstr.split(",");
