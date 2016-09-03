@@ -2,13 +2,14 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 48px;
+    height: 24px;
     width: 100%;
     border-bottom: 1px solid #cbcbcb;
+    padding: 2px 0px 2px 0px;
 }
 #left {
     position: absolute;
-    top: 48px;
+    top: 28px;
     left: 0px;
     right: 66%;
     bottom: 3%;
@@ -25,7 +26,7 @@
 }
 #middle {
     position: absolute;
-    top: 48px;
+    top: 28px;
     left: 34%;
     right: 33%;
     height: 92.5%;
@@ -33,7 +34,7 @@
 }
 #right {
     position: absolute;
-    top: 48px;
+    top: 28px;
     left: 67%;
     right: 0px;
     height: 92.5%;
