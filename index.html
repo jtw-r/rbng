@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8" />
         <title>Random Business Name Generator</title>
-        <link type="text/css" rel="stylesheet" href="style.css">
         <script src="choices.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="topbar" class="grid">
-            <b id="title">A Random Business Name Generator</b> | <b id="credits">Developed by Jonathan Reiterman</b> | <b id="version"></b>
+        <div id="topbar">
+            <b id="title">Random Business Name Generator</b> | <b id="credits">Developed by Jonathan Reiterman</b> | <b id="version"></b>
         </div>
-
         <div id="left">
             <p style="text-align: center;"><b>Control Panel</b></p>
-            <input type="checkbox" id="name" title="Put a randomaly generated name, like 'Bob', at the begining of your company's name. Ex: Bob's newspapers.">Random person's name at begining<br>
-            <!--<input type="checkbox" id="companyend" title="Put a word like 'Company' or 'Business' at the end of your company's name.">'Company' at end of name<br>--><br>
+            <label><input type="checkbox" id="name" title="Put a randomaly generated name, like 'Bob', at the begining of your company's name. Ex: Bob's newspapers.">Random person's name at begining</label><br>
             <button class="green" type="button" id="generateName" onclick="c('generated').innerHTML = generate();">Generate Name</button> <button class="red" type="button" id="clear" onclick="c('history').innerHTML = ''">Clear History</button><br><br>
             <p>Please Note that these names are completely random and sometimes might not make much sense, like for example 'Don's Hourglass farm'</p>
         </div>
         <div id="bottomleft">
-            Check out the source code on <a href="https://github.com/thejonathanr/rbng" target="_blank">Github</a> <a href="googleef2315f249341342.html">Click me!</a>
+            <a href="https://github.com/thejonathanr/rbng" target="_blank">Check out the source code on Github</a>
         </div>
         <div id="middle">
+            <br><br>
             <div id="generated"></div>
         </div>
         <div id="right">
@@ -33,29 +32,30 @@
                 function c(what) { return document.getElementById(what); }
                 function choose(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
-                var version = "Version: 1.0.4"
+                var version = "Version: 1.1.2"
                 c('version').innerHTML = version;
 
                 generate = function () {
 
-                    if (c('generated').innerHTML == "") {
-
-                    } else {
+                    if (c('generated').innerHTML != "") {
                         c('history').innerHTML += (c('generated').innerHTML) + '<br>';
                     }
 
-                    var str = "";
+                    var b_name = "";
+					var choice = choose(thingdata);
 
                     if (c('name').checked == true) {
-                        str += (choose(namedata)) + "\'s ";
+                        b_name += (choose(namedata)) + "\'s ";
                     } else {
-                        str += (choose(beginingdata)) + " ";
+						var beginingchoice = [];
+						for (i=0; i < 3; i++) {
+							if (choice[i]) { beginingchoice.push(beginingdata[i]) }
+						}
+                        b_name += (choose(beginingchoice)) + " ";
                     }
 
-                    str += (choose(thingdata));
-
-                    str += " " + (choose(endingdata));
-                    return str;
+                    b_name += choice[3] + " " + (choose(endingdata));
+                    return b_name;
                 }
         </script>
     </body>

@@ -2,13 +2,14 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    height: 48px;
+    height: 24px;
     width: 100%;
     border-bottom: 1px solid #cbcbcb;
+    padding: 2px 0px 2px 0px;
 }
 #left {
     position: absolute;
-    top: 48px;
+    top: 28px;
     left: 0px;
     right: 66%;
     bottom: 3%;
@@ -25,44 +26,49 @@
 }
 #middle {
     position: absolute;
-    top: 48px;
+    top: 28px;
     left: 34%;
     right: 33%;
     height: 92.5%;
-    border-right: 1px solid #cbcbcb;
+}
+#generated {
+    font-size: 32px;
+    font-weight: 100%;
+    text-align: center;
 }
 #right {
     position: absolute;
-    top: 48px;
+    top: 29px;
     left: 67%;
     right: 0px;
-    height: 92.5%;
-    overflow-y: scroll;
+    height: calc(100vh - 29px);
+    overflow-y: auto;
+    border-left: 1px solid #cbcbcb;
 }
 h1{
-	font-size:38px;
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight:100;
+    font-size:38px;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:100;
 }
 h2{
-	font-size:32px;
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight:100;
+    font-size:32px;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:100;
 }
 h3{
-	font-size:27px;
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight:100;
+    font-size:27px;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:100;
 }
 h4, h5, h6{
-	font-size:46px;
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight:100;
+    font-size:46px;
+    font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight:100;
 }
 p, b{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:100;
+    font-size: 18px;
+    font-family:Helvetica, Arial;
+    font-weight:100;
 }
 #title,
 #credits,
@@ -72,43 +78,43 @@ p, b{
     font-weight: bold;
 }
 button{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:300;
+    font-size: 18px;
+    font-family:Helvetica, Arial;
+    font-weight:300;
 }
 input{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:300;
+    font-size: 18px;
+    font-family:Helvetica, Arial;
+    font-weight:300;
 }
 body{
-	font-size: 16px;
-	font-family:Helvetica, Arial;
-	font-weight:300;
+    font-size: 16px;
+    font-family:Helvetica, Arial;
+    font-weight:300;
 }
 .red{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:inherit;
-	color: red;
+    font-size: 18px;
+    font-family:Helvetica, Arial;
+    font-weight:inherit;
+    color: red;
 }
 .green{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:100;
-	color: green;
+    font-size: 18px;
+    font-family:Helvetica, Arial;
+    font-weight:100;
+    color: green;
 }
 .blue{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:100;
-	color: blue;
+    font-size: 18px;
+    font-family:Helvetica, Arial;
+    font-weight:100;
+    color: blue;
 }
 .yellow{
-	font-size: 18px;
-	font-family:Helvetica, Arial;
-	font-weight:100;
-	color: yellow;
+    font-size: 18px;
+    font-family:Helvetica, Arial;
+    font-weight:100;
+    color: yellow;
 }
 button{    
     display: inline-block;
@@ -172,6 +178,7 @@ a {
 a:hover {
     color: #999;
 }
+
 #history-title {
     border-bottom: 1px dashed #cbcbcb;
     padding: 2px;
