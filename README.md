@@ -2,6 +2,14 @@
 A 'simple' web based Business name generator. Built mostly upon javascript and css and with a few dabs of html.
 
 # Change log:
+* Version 1.2.2
+  * index.html was cleaned up.
+  * More choices were added.
+    * Added the option to specify if an 's' got added to the end of the name.
+    * Added the option to specify the gender of a name.
+  * Added gender controls.
+  * Added function to auto scroll the history div.
+
 * Version 1.1.2:
   * CSS was cleaned up.
   	* Looks good on all desktop devices. Mobile not tested yet.

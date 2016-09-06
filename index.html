@@ -4,7 +4,15 @@
         <meta charset="utf-8" />
         <title>Random Business Name Generator</title>
         <script src="choices.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link type="text/css" rel="stylesheet" href="style.css">
+        <script>
+        $(document).ready(function(){
+            $("#name").on("click", function(){
+                $("#name_form").toggle();
+            });
+        });
+        </script>
     </head>
     <body>
         <div id="topbar">
@@ -12,7 +20,15 @@
         </div>
         <div id="left">
             <p style="text-align: center;"><b>Control Panel</b></p>
-            <label><input type="checkbox" id="name" title="Put a randomaly generated name, like 'Bob', at the begining of your company's name. Ex: Bob's newspapers.">Random person's name at begining</label><br>
+            <label title="Put a randomaly generated name, like 'Bob', at the begining of your company's name. Ex: Bob's newspapers.">
+                <input type="checkbox" id="name" >Random person's name at begining
+            </label><br>
+            <form action="" id="name_form" hidden>
+                <label><input type="radio" name="gender" id="rb_male" value="1">Male</label><br>
+                <label><input type="radio" name="gender" id="rb_female" value="0">Female</label><br>
+                <label><input type="radio" name="gender" id="rb_both" value="2" checked>Both</label><br>
+                <label title=""><input type="checkbox" id="end" title="" checked>Keep end piece of name</label><br>
+            </form>
             <button class="green" type="button" id="generateName" onclick="c('generated').innerHTML = generate();">Generate Name</button> <button class="red" type="button" id="clear" onclick="c('history').innerHTML = ''">Clear History</button><br><br>
             <p>Please Note that these names are completely random and sometimes might not make much sense, like for example 'Don's Hourglass farm'</p>
         </div>
@@ -27,34 +43,55 @@
             <div id="history-title">History:</div>
             <div id="history"></div>
         </div>
-
             <script>
                 function c(what) { return document.getElementById(what); }
                 function choose(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
-                var version = "Version: 1.1.2"
+                var version = "Version: 1.2.2";
                 c('version').innerHTML = version;
 
                 generate = function () {
+                    choose_namedata = function () {
+                        var p_name = choose(namedata);
+                        if (c('rb_female').checked) { p_gender = 0; } else if (c('rb_male').checked) { p_gender = 1; } else { p_gender = 2; }
+                        if (p_name[0] == p_gender || p_gender == 2) {
+                            return p_name[1];
+                        } else {
+                            return choose_namedata();
+                        }
+                    }
 
                     if (c('generated').innerHTML != "") {
                         c('history').innerHTML += (c('generated').innerHTML) + '<br>';
+                        c('right').scrollTop = c('right').scrollHeight - c('right').clientHeight;
                     }
 
                     var b_name = "";
 					var choice = choose(thingdata);
 
                     if (c('name').checked == true) {
-                        b_name += (choose(namedata)) + "\'s ";
+                        b_name += choose_namedata() + "\'s ";
+                        if (c('end').checked == true) {
+                            b_name += choice[4] + " " + (choose(endingdata));
+                        } else {
+                            if (choice[3] == 0) {
+                                b_name += choice[4] + "s";
+                            } else {
+                                if (choice[3] == 1) {
+                                    b_name += choice[4];
+                                } else {
+                                    b_name += choice[4] + choice[3];
+                                }
+                            }
+                        }
                     } else {
 						var beginingchoice = [];
 						for (i=0; i < 3; i++) {
 							if (choice[i]) { beginingchoice.push(beginingdata[i]) }
 						}
-                        b_name += (choose(beginingchoice)) + " ";
+                        b_name += (choose(beginingchoice)) + " " + choice[4] + " " + (choose(endingdata));
                     }
 
-                    b_name += choice[3] + " " + (choose(endingdata));
                     return b_name;
                 }
         </script>
