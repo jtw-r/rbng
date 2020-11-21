@@ -25,9 +25,9 @@ A 'simple' web based Business name generator. Built mostly upon javascript and c
   * Separate file for all of the randomness that the generator chooses from
 
 # Links:
-- [The webpage](http://thejonathanr.github.io/rbng/)
+- [The webpage](https://rbng.jtw-r.com)
 
 # How you can help:
-* You can add things to the choices file... [HERE](https://github.com/thejonathanr/RandomBusinessNameGenerator/blob/master/choices.js)
+* You can add things to the choices file... [HERE](https://github.com/jtw-r/rbng/blob/master/choices.js)
 * You can recomend it to any friends/co-workes that you may know
-* You can report any bugs [HERE](https://github.com/thejonathanr/RandomBusinessNameGenerator/issues/new)
+* You can report any bugs [HERE](https://github.com/jtw-r/rbng/issues/new)
