@@ -33,9 +33,9 @@
             <label><input type="radio" name="gender" id="rb_both" value="2" checked>Both</label><br>
             <label title=""><input type="checkbox" id="end" title="" checked>Keep end piece of name</label><br>
           </form>
-          <button class="ccss-button green size-large" type="button" id="generateName" onclick="c('generated').innerHTML = generate();">Generate Name
+          <button class="ccss-button green size-large" type="button" id="generateName" onclick="idGet('generated').innerHTML = generate();">Generate Name
           </button>
-          <button class="ccss-button red size-large" type="button" id="clear" onclick="c('history').innerHTML = ''">Clear History</button>
+          <button class="ccss-button red size-large" type="button" id="clear" onclick="idGet('history').innerHTML = ''">Clear History</button>
           <br><br>
           <p>Please Note that these names are completely random and sometimes might not make much sense, like for example 'Don's
              Hourglass farm'</p>
@@ -58,7 +58,17 @@
   </div>
 
   <script>
-    function c(what) {
+
+    //
+    // Constants
+    //
+    let AppVersion = "1.2.2"
+
+
+    //
+    // Generic Functions:
+    //
+    function idGet(what) {
       return document.getElementById(what);
     }
 
@@ -66,15 +76,22 @@
       return arr[Math.floor(Math.random() * arr.length)];
     }
 
-    var version = "Version: 1.2.2";
-    c('version').innerHTML = version;
+
+    //
+    // Init
+    //
+    function __init__() {
+      idGet('version').innerHTML = "Version: " + AppVersion;
+    }
+
+
 
     generate = function () {
       choose_namedata = function () {
         var p_name = choose(namedata);
-        if (c('rb_female').checked) {
+        if (idGet('rb_female').checked) {
           p_gender = 0;
-        } else if (c('rb_male').checked) {
+        } else if (idGet('rb_male').checked) {
           p_gender = 1;
         } else {
           p_gender = 2;
@@ -86,17 +103,17 @@
         }
       }
 
-      if (c('generated').innerHTML != "") {
-        c('history').innerHTML += (c('generated').innerHTML) + '<br>';
-        c('right').scrollTop = c('right').scrollHeight - c('right').clientHeight;
+      if (idGet('generated').innerHTML != "") {
+        idGet('history').innerHTML += (idGet('generated').innerHTML) + '<br>';
+        idGet('right').scrollTop = idGet('right').scrollHeight - idGet('right').clientHeight;
       }
 
       let b_name = "";
       let choice = choose(thingdata);
 
-      if (c('name').checked === true) {
+      if (idGet('name').checked === true) {
         b_name += choose_namedata() + "\'s ";
-        if (c('end').checked === true) {
+        if (idGet('end').checked === true) {
           b_name += choice[4] + " " + (choose(endingdata));
         } else {
           if (choice[3] == 0) {
@@ -121,6 +138,9 @@
 
       return b_name;
     }
+
+    __init__();
+
   </script>
 </body>
 </html>
