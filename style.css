@@ -1,4 +1,162 @@
-#topbar {
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.container .header {
+    flex: 0 1 auto;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 2px
+}
+
+.container .content {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: auto;
+    overflow-y: auto;
+}
+
+.container .footer {
+    flex: 0 1 auto;
+    border-top: 1px solid #e6e6e6;
+    padding: 2px;
+}
+
+.vertical-container {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid #e6e6e6;
+}
+
+.header *,
+.footer * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pad {
+    height: 100%;
+    padding: 5px 8px;
+}
+
+[class*=w-] {
+    float: left;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-Half {
+    width: 50%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-Third {
+    width: 33.3333333%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-Quarter {
+    width: 25%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+[class*=h-] {
+    float: left;
+    overflow-x: scroll;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-95 {
+    height: 95%;
+}
+
+.h-15 {
+    height: 15%;
+}
+
+.h-10 {
+    height: 10%;
+}
+
+.h-5 {
+    height: 5%;
+}
+
+.h-15-30 {
+    min-height: 15%;
+    max-height: 30%;
+}
+
+.h-15-60 {
+    min-height: 15%;
+    max-height: 60%;
+}
+
+
+
+/*#topbar {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -30,20 +188,20 @@
     left: 34%;
     right: 33%;
     height: 92.5%;
-}
+}*/
 #generated {
     font-size: 32px;
     font-weight: 100%;
     text-align: center;
 }
 #right {
-    position: absolute;
+    /*position: absolute;
     top: 29px;
     left: 67%;
     right: 0px;
     height: calc(100vh - 29px);
+    border-left: 1px solid #cbcbcb;*/
     overflow-y: auto;
-    border-left: 1px solid #cbcbcb;
 }
 h1{
     font-size:38px;
