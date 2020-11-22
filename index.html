@@ -5,7 +5,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/crystalcss/build/css/crystal.css">
   <link rel="stylesheet" href="style.css">
   <title>Random Business Name Generator</title>
-  <script src="choices.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
@@ -16,24 +15,21 @@
   </script>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h3>Random Business Name Generator | Developed by Jonathan Reiterman | <span id="version"></span></h3>
-    </div>
-    <div class="content">
+  <div class="ccss-flex-container-col container">
+    <h3 class="ccss-flex-header">Random Business Name Generator | Developed by Jonathan Reiterman | <span id="version"></span></h3>
+    <div class="ccss-flex-content">
       <div class="vertical-container w-Third">
         <div class="pad">
           <h3 class="ccss-centre">Control Panel</h3>
           <label title="Put a randomly generated name, like 'Bob', at the beginning of your company's name. Ex: Bob's newspapers.">
-            <input type="checkbox" id="name">Random person's name at beginning
+            <input type="checkbox" id="cb_name">Random person's name at beginning
           </label><br>
           <form action="" id="name_form" hidden>
-            <label><input type="radio" name="gender" id="rb_male" value="1">Male</label><br>
-            <label><input type="radio" name="gender" id="rb_female" value="0">Female</label><br>
-            <label><input type="radio" name="gender" id="rb_both" value="2" checked>Both</label><br>
-            <label title=""><input type="checkbox" id="end" title="" checked>Keep end piece of name</label><br>
+            <label><input type="checkbox" name="gender" id="cb_male" value="1" checked>Male</label><br>
+            <label><input type="checkbox" name="gender" id="cb_female" value="0" checked>Female</label><br>
+            <label><input type="checkbox" id="cb_end" checked>Keep end piece of name</label><br>
           </form>
-          <button class="ccss-button green size-large" type="button" id="generateName" onclick="idGet('generated').innerHTML = generate();">Generate Name
+          <button class="ccss-button green size-large" type="button" id="generateName" onclick="generate();">Generate Name
           </button>
           <button class="ccss-button red size-large" type="button" id="clear" onclick="idGet('history').innerHTML = ''">Clear History</button>
           <br><br>
@@ -52,7 +48,7 @@
         <div id="history"></div>
       </div>
     </div>
-    <div class="footer">
+    <div class="ccss-flex-footer footer">
       <a href="https://github.com/jtw-r/rbng" target="_blank">Check out the source code on Github</a>
     </div>
   </div>
@@ -62,7 +58,11 @@
     //
     // Constants
     //
-    let AppVersion = "1.2.3"
+    let AppVersion = "1.3.0";
+
+    let Things;
+    let Names;
+    let Endings;
 
 
     //
@@ -76,67 +76,132 @@
       return arr[Math.floor(Math.random() * arr.length)];
     }
 
+    function getDataFromFile(_path, _type="json") {
+      let request = new XMLHttpRequest();
+      request.open('GET', _path);
+      request.responseType = _type;
+      request.send();
+      return request;
+    }
+
 
     //
     // Init
     //
     function __init__() {
       idGet('version').innerHTML = "Version: " + AppVersion;
+
+      // Load in all of the data from the Things.JSON file
+      let request_things = getDataFromFile("./data/things.JSON");
+      request_things.onload = function () {
+        Things = request_things.response;
+      };
+
+      // Load in all of the data from the Names.JSON file
+      let request_names = getDataFromFile("./data/names.json");
+      request_names.onload = function () {
+        Names = request_names.response;
+      };
+
+      // Load in all of the data from the Endings.JSON file
+      let request_endings = getDataFromFile("./data/endings.json");
+      request_endings.onload = function () {
+        Endings = request_endings.response;
+      };
     }
 
+    // This is the function that is used to generate a random business name!
+    function generate() {
+      // First things first! Let's initiate all of the variables that we will be using with their default values.
+      // These first 6 variables are all string placeholders that we'll concatenate at the end of this function.
+      let business_name = "";
+      let chosen_prefix = "";
+      let chosen_name = "";
+      let chosen_thing = "";
+      let chosen_ending = "";
+      let chosen_suffix = "";
+      // These next two variables are temporary arrays to store JSON objects.
+      let _arr_chosen_thing = [];
+      let _arr_chosen_name = [];
+      // And these last four variables store boolean information from our control panel checkboxes.
+      let cb_name = idGet("cb_name").checked;
+      let cb_female = idGet("cb_female").checked;
+      let cb_male = idGet("cb_male").checked;
+      let cb_end = idGet("cb_end").checked;
 
-
-    generate = function () {
-      choose_namedata = function () {
-        var p_name = choose(namedata);
-        if (idGet('rb_female').checked) {
-          p_gender = 0;
-        } else if (idGet('rb_male').checked) {
-          p_gender = 1;
-        } else {
-          p_gender = 2;
-        }
-        if (p_name[0] == p_gender || p_gender == 2) {
-          return p_name[1];
-        } else {
-          return choose_namedata();
-        }
-      }
-
-      if (idGet('generated').innerHTML != "") {
+      // Next, let's check to see if the "generated" field on screen, that displays the business name, has a text value
+      // in it.
+      if (idGet('generated').innerHTML !== "") {
+        // Looks like there was a value in the element. We're going to append that business name to our history panel.
         idGet('history').innerHTML += (idGet('generated').innerHTML) + '<br>';
+        // Then, we're going to scroll the history panel to the bottom of it to keep the most recent values in view.
         idGet('right').scrollTop = idGet('right').scrollHeight - idGet('right').clientHeight;
       }
 
-      let b_name = "";
-      let choice = choose(thingdata);
+      // We're going to store a randomly chosen "Thing" to our chosen thing temporary array, and we're also going to
+      // store the "name" field from the JSON object in the chosen thing variable for later use.
+      _arr_chosen_thing = choose(Things);
+      chosen_thing = _arr_chosen_thing["name"];
 
-      if (idGet('name').checked === true) {
-        b_name += choose_namedata() + "\'s ";
-        if (idGet('end').checked === true) {
-          b_name += choice[4] + " " + (choose(endingdata));
-        } else {
-          if (choice[3] == 0) {
-            b_name += choice[4] + "s";
-          } else {
-            if (choice[3] == 1) {
-              b_name += choice[4];
-            } else {
-              b_name += choice[4] + choice[3];
+      // This if statement does two things:
+      //  1) Check to see if the "Random person's name at beginning" checkbox is checked.
+      //  If it is checked, it 2) also looks to see if either of the two checkboxes relating to gender are checked.
+      //  If neither of those criteria are met, we'll assume that we want to use a prefix instead of a name.
+      if ((cb_name === true) && (cb_female === true || cb_male === true)) {
+        // To keep track of which genders are currently selected, we'll store them in our temporary constraints array.
+        // By default, this array comes preloaded with a value; "Both". A name that has it's gender set to "Both" means
+        // that it is classified as androgynous, and can feasibly belong to any gender.
+        let _constraints = ["Both"];
+
+        // These two if statements check to see if their checkbox is checked. If it is, they'll add their value to our
+        // temporary constraint array. This can be expanded in the future if more options want to be added!
+        if (cb_female) { _constraints.push("Female") }
+        if (cb_male) { _constraints.push("Male") }
+
+        // Lets create a simple while loop to test our chosen name. This loop only halts when the variable "chosen_name"
+        // is set to a name. This makes it easy to loop over many options, and only picking one when all of the
+        // constraints are met.
+        while (chosen_name === "") {
+          // Choose a random name from our list, and assign it's JSON object to our temporary array.
+          _arr_chosen_name = choose(Names);
+          // Next, we'll run a loop for each of the constraints to see if our chosen name fulfills them.
+          _constraints.forEach(element => {
+            // This if statement simply check to see if our chosen name's gender matches the current constraint we are
+            // looping through.
+            if (_arr_chosen_name["gender"] === element) {
+              // If it does match, we'll assign the name to our chosen_name variable, along with a 's at the end. Since
+              // the chosen_name variable is no longer empty, this will halt our while loop, signifying that we've made
+              // our selection!
+              chosen_name = _arr_chosen_name["name"] + "'s";
             }
-          }
+          })
         }
       } else {
-        var beginingchoice = [];
-        for (i = 0; i < 3; i++) {
-          if (choice[i]) {
-            beginingchoice.push(beginingdata[i])
-          }
-        }
-        b_name += (choose(beginingchoice)) + " " + choice[4] + " " + (choose(endingdata));
+        // Looks like we're going to choose a prefix "A, An, The" instead of a name. We'll assign a random one that is
+        // provided by our chosen thing array to the chose_prefix variable.
+        chosen_prefix = choose(_arr_chosen_thing["prefixes"]);
       }
 
-      return b_name;
+      // Check to see if the "Keep end piece of name" checkbox is checked.
+      if (cb_end === true) {
+        // It is checked, so we'll choose a random ending "LLC, Inc, Business" to go at the end of the business name.
+        chosen_ending = " " + choose(Endings);
+      } else {
+        // It is not checked so we'll choose a random suffix, usually "s", from our chosen thing array.
+        chosen_suffix = choose(_arr_chosen_thing["suffixes"]);
+      }
+
+      // Now comes the part where we concatenate everything together to get our random business name!
+      // A few things to note:
+      //  1) Only one of the two variables, chosen_prefix & chosen_name, will be used at a time in our name. One will
+      //      return "" and the other will be populated with a random word.
+      //  2) The same goes for the two variables, chosen_suffix & chosen_ending. Only one will be used at a time.
+      //  3) chosen_ending already has a " " at the beginning of it.
+      business_name = chosen_prefix + chosen_name + " " + chosen_thing + chosen_suffix + chosen_ending;
+
+      // Very last step: we'll assign our business name to the "generated" html element!
+      idGet("generated").innerHTML = business_name;
+
     }
 
     __init__();
