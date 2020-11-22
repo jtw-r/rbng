@@ -1,6 +1,9 @@
 # RandomBusinessNameGenerator
 A 'simple' web based Business name generator. Built mostly upon javascript and css and with a few dabs of html.
 
+# Links:
+- [The webpage](https://rbng.jtw-r.com)
+
 # Change log:
 * #### Version 1.3.0
   * Many backend changes!
@@ -36,9 +39,6 @@ A 'simple' web based Business name generator. Built mostly upon javascript and c
   * History panel was added
   * Clear history panel button was added
   * Separate file for all of the randomness that the generator chooses from
-  
-# Links:
-- [The webpage](https://rbng.jtw-r.com)
 
 # How you can help:
 * You can add things to the choices file... [HERE](https://github.com/jtw-r/rbng/blob/master/choices.js)
