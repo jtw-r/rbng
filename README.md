@@ -2,6 +2,13 @@
 A 'simple' web based Business name generator. Built mostly upon javascript and css and with a few dabs of html.
 
 # Change log:
+* Version 1.2.3
+  * Design Refresh:
+    * Implemented [CrystalCSS](https://github.com/crystalcss/crystalcss)
+    * Styles now match with [Superhero Generator](https://github.com/jtw-r/SuperheroGenerator)
+  * Fixed link issues because of GitHub name change
+  * Fixed spelling
+  * Updated JQuery version
 * Version 1.2.2
   * index.html was cleaned up.
   * More choices were added.
