@@ -1,74 +1,57 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0
+  height: 100%;
+  margin: 0
 }
 
 .container {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
+  height: 100%;
 }
 
-.container .header {
-    flex: 0 1 auto;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 2px
-}
-
-.container .content {
-    flex-shrink: 1;
-    flex-grow: 1;
-    flex-basis: auto;
-    overflow-y: auto;
+.container h3 {
+  padding: 2px;
+  margin: 0;
 }
 
 .container .footer {
-    flex: 0 1 auto;
-    border-top: 1px solid #e6e6e6;
-    padding: 2px;
+  padding: 2px;
 }
 
 .vertical-container {
-    float: left;
-    height: 100%;
-    overflow: hidden;
-    border-right: 1px solid #e6e6e6;
-}
-
-.header *,
-.footer * {
-    margin-top: 0;
-    margin-bottom: 0;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  border-right: 1px solid #e6e6e6;
 }
 
 .pad {
-    height: 100%;
-    padding: 5px 8px;
+  height: 100%;
+  padding: 5px 8px;
 }
 
 [class*=w-] {
-    float: left;
+  float: left;
 }
 
 .w-Third {
-    width: 33.3333333%;
+  width: 33.3333333%;
 }
 
 #generated {
-    font-size: 32px;
-    font-weight: 100;
-    text-align: center;
+  font-size: 32px;
+  font-weight: 100;
+  text-align: center;
 }
+
 #right {
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
 #history-title {
-    border-bottom: 1px dashed #cbcbcb;
-    padding: 2px;
+  border-bottom: 1px dashed #cbcbcb;
+  padding: 2px;
 }
