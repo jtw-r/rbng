@@ -1,0 +1,911 @@
+[
+  {
+    "name": "Apple",
+    "prefixes": [
+      "An",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Bannana",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Cherry",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Farm",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Orchard",
+    "prefixes": [
+      "An",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Bear",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Book",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Bike",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Bat",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Window",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Computer",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Wine Press",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "es"
+    ]
+  },
+  {
+    "name": "Table",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Cat",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Car",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Auto Part",
+    "prefixes": [
+      "An",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Lamp",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Tree",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Mailbox",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Newspaper",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Office Stuff",
+    "prefixes": [
+      "An",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Jewlry",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Blanket",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Basket",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Pen",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Paper",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Art Stuff",
+    "prefixes": [
+      "An",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Door",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Doorframe",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Deck",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Pool",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Hottub",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Shoe",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Pantleg",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Fur",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Piano",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Pie",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Sink",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Bookcase",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Hourglass",
+    "prefixes": [
+      "An",
+      "The"
+    ],
+    "suffixes": [
+      "es"
+    ]
+  },
+  {
+    "name": "Case",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Bookend",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Pellow",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Shopingbag",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Catbox",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Cat Litter",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Dishwasher",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Dish",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "es"
+    ]
+  },
+  {
+    "name": "TV",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Dust",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Snow Matchine",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Disco Ball",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Boardgame",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Solid State Drive",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Flash Drive",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Printer",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Lightswitch",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "es"
+    ]
+  },
+  {
+    "name": "Power Strip",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Hard Drive",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Tree Sap",
+    "prefixes": [
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Kidney Bean",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Taco",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Salsa",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Rice",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Furnace",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Rain Barrel",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Foot Cream",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Ice cream",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Gift Card",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Thank You Card",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Backpack",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Keyboard",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Chocolate",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Microscope",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Headphone",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Case",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "es"
+    ]
+  },
+  {
+    "name": "Party Hat",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Slipper",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Laundry Basket",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Pretzel",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Baboon",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Balloon",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Script",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Golf Club",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Gold Ball",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Golf Bag",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Yoga Mat",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Pinecone",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Trashcan",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      ""
+    ]
+  },
+  {
+    "name": "Pushpin",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  },
+  {
+    "name": "Surfboard",
+    "prefixes": [
+      "A",
+      "The"
+    ],
+    "suffixes": [
+      "s"
+    ]
+  }
+]
