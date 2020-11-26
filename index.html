@@ -98,13 +98,13 @@
       };
 
       // Load in all of the data from the Names.JSON file
-      let request_names = getDataFromFile("./data/names.json");
+      let request_names = getDataFromFile("./data/names.JSON");
       request_names.onload = function () {
         Names = request_names.response;
       };
 
       // Load in all of the data from the Endings.JSON file
-      let request_endings = getDataFromFile("./data/endings.json");
+      let request_endings = getDataFromFile("./data/endings.JSON");
       request_endings.onload = function () {
         Endings = request_endings.response;
       };
